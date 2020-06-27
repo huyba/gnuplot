@@ -1,5 +1,5 @@
 #!/usr/bin/gnuplot
-
+  
 set title "Fix number of events, vary number of predicates"
 set xlabel "Number of Predicates"
 set ylabel "Time(ms)"
@@ -11,6 +11,6 @@ set ytics (2,4,8,16,32,64)
 set xtics (256,512,1024,2048,4096,8192,16384)
 set logscale x
 set logscale y
-set terminal postscript
+set term postscript color enhanced
 set output 'test1.eps'
-plot 'test1.txt' using 1:2 w linespoints lc rgb "red" lw 3 title "Execution time (ms)"
+plot 'test1.txt' using 1:2 w linespoints lc rgb "blue" lw 3 title "Execution time (ms)"
